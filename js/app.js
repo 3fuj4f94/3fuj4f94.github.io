@@ -1,22 +1,23 @@
 var radio = document.getElementById("radio");
 var boton = document.getElementById("boton");
 
-radio.src = 'http://stream.zeno.fm/tgw7zh33h18uv'
+radio.src = 'http://stream.zeno.fm/1s53a2gkuf9uv'
 
-
+var temp = 2
 
 boton.addEventListener('click', ()=>{
-  radio.play()
-  boton.innerHTML = 'Pause'
+  if (temp%2==0) {
+    radio.play()
+    boton.innerHTML = 'Pause'
+    console.log(temp)
+  } else {
+    radio.pause()
+    boton.innerHTML = 'Play'
+    console.log(temp)
+  }
+  temp++
 })
 
-/*function play_Audio() {
-    GFG.play();
-}
-
-function pause_Audio() {
-    GFG.pause();
-}*/
 
 
 
