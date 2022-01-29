@@ -1,5 +1,6 @@
 var radio = document.getElementById("radio");
 var boton = document.getElementById("boton");
+var down = document.getElementById("down");
 
 radio.src = 'http://stream.zeno.fm/1s53a2gkuf9uv'
 
@@ -18,7 +19,7 @@ boton.addEventListener('click', ()=>{
   temp++
 })
 
-
+down.href = 'files/Membership Control_20220129031401.zip'
 
 
 
